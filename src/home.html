@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+
+			<section class="service">
+				<div class="service__container">
+					<div class="service__header">
+						<h1 class="service__title title">Интелектуальная система мониторинга</h1>
+
+						<div class="service__text">
+							<p><b>Модульная платформа</b>, позволяющвя легко и удобно взаиоействовать с автопарком при помощи веб-интерфейса или ботов в Telegram</p>
+							<p><b>Идеально подойдет</b> для небольших транспортных предприятий и таксопарков разных размеров.</p>
+							<p><b>Выберите свой набор функций:</b> <br> И не платите за то, чем Вы не пользуетесь</p>
+						</div>
+					</div>
+
+					<form action="#" class="service__form form-service">
+						<div class="form-service__item item-form-service">
+							<div class="item-form-service__checkbox checkbox">
+								<input id="c_1" class="checkbox__input" type="checkbox" value="Мониторинг" name="form[]">
+								<label for="c_1" class="checkbox__label"></label>
+							</div>
+							<div class="item-form-service__body">
+								<div data-spollers class="spollers">
+									<div class="spollers__item">
+										<button type="button" data-spoller class="spollers__title _spoller-active">Мониторинг</button>
+										<div class="spollers__body">Позволяет отображать местоположение объекта и его параметры на карте в реальном времени. Удобен для диспетчеров и логистов, когда нужно оперативно знать где и какие автомобили находятся.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-service__item item-form-service">
+							<div class="item-form-service__checkbox checkbox">
+								<input id="c_2" class="checkbox__input" type="checkbox" value="Треки и поездки" name="form[]">
+								<label for="c_2" class="checkbox__label"></label>
+							</div>
+							<div class="item-form-service__body">
+								<div data-spollers class="spollers">
+									<div class="spollers__item">
+										<button type="button" data-spoller class="spollers__title">Треки и поездки</button>
+										<div class="spollers__body">Функионал, позволяющий отображать маршруты следования транспорта за прошедший период времени. Присутствует фильтрация: поездки, остановки и стоянки. Стоимость напрямую зависит от необходимого срока хранения исторических данных.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-service__item item-form-service">
+							<div class="item-form-service__checkbox checkbox">
+								<input id="c_3" class="checkbox__input" type="checkbox" value="Отчеты" name="form[]">
+								<label for="c_3" class="checkbox__label"></label>
+							</div>
+							<div class="item-form-service__body">
+								<div data-spollers class="spollers">
+									<div class="spollers__item">
+										<button type="button" data-spoller class="spollers__title">Отчеты</button>
+										<div class="spollers__body">Система позволяет выборочно конфигурировать требуемый набор отчетов для каждого клиента. Основные виды отчетов: по пробегу; по поездкам; по стоянкам; по превышениям скорости; по геозонам; о неисправностях; о перепробегах; о связи с объектами; о статусах выдачи ТС. 
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-service__item item-form-service">
+							<div class="item-form-service__checkbox checkbox">
+								<input id="c_4" class="checkbox__input" type="checkbox" value="Блокировки и журнал" name="form[]">
+								<label for="c_4" class="checkbox__label"></label>
+							</div>
+							<div class="item-form-service__body">
+								<div data-spollers class="spollers">
+									<div class="spollers__item">
+										<button type="button" data-spoller class="spollers__title">Блокировки и журнал</button>
+										<div class="spollers__body">Модуль позволяет блокировать и разблокировать ТС, а также отображать записи о всех блокировках транспортных средств с указанием типа блокировки: вручную, по API или балансу, по выезду из назначенных администратором геозон.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-service__item item-form-service">
+							<div class="item-form-service__checkbox checkbox">
+								<input id="c_5" class="checkbox__input" type="checkbox" value="Пользователи" name="form[]">
+								<label for="c_5" class="checkbox__label"></label>
+							</div>
+							<div class="item-form-service__body">
+								<div data-spollers class="spollers">
+									<div class="spollers__item">
+										<button type="button" data-spoller class="spollers__title">Пользователи</button>
+										<div class="spollers__body">Модуль позволяет создавать пользовательские аккаунты для диспетчеров, логистов или менеджеров. При подключении - основной аккаунт автоматически становится административным.</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-service__item item-form-service">
+							<div class="item-form-service__checkbox checkbox">
+								<input id="c_6" class="checkbox__input" type="checkbox" value="Уведомления" name="form[]">
+								<label for="c_6" class="checkbox__label"></label>
+							</div>
+							<div class="item-form-service__body">
+								<div data-spollers class="spollers">
+									<div class="spollers__item">
+										<button type="button" data-spoller class="spollers__title">Уведомления</button>
+										<div class="spollers__body">Модуль позволяет настроить уведомления, которые будут приходить в интерфейс, или Telegram-канал или по E-mail по ряду событий, например таких, как превышение скоростного режима.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-service__item item-form-service">
+							<div class="item-form-service__checkbox checkbox">
+								<input id="c_7" class="checkbox__input" type="checkbox" value="Геозоны" name="form[]">
+								<label for="c_7" class="checkbox__label"></label>
+							</div>
+							<div class="item-form-service__body">
+								<div data-spollers class="spollers">
+									<div class="spollers__item">
+										<button type="button" data-spoller class="spollers__title">Геозоны</button>
+										<div class="spollers__body">Позволяет</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-service__item item-form-service">
+							<div class="item-form-service__checkbox checkbox">
+								<input id="c_8" class="checkbox__input" type="checkbox" value="Тикеты" name="form[]">
+								<label for="c_8" class="checkbox__label"></label>
+							</div>
+							<div class="item-form-service__body">
+								<div data-spollers class="spollers">
+									<div class="spollers__item">
+										<button type="button" data-spoller class="spollers__title">Тикеты</button>
+										<div class="spollers__body">Система обмена сообщениями внутри системы мониторинга. Позволяет создавать тикет для других пользователей Вашего аккаунта или технической поддержки сервиса.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-service__item item-form-service">
+							<div class="item-form-service__checkbox checkbox">
+								<input id="c_9" class="checkbox__input" type="checkbox" value="Водители" name="form[]">
+								<label for="c_9" class="checkbox__label"></label>
+							</div>
+							<div class="item-form-service__body">
+								<div data-spollers class="spollers">
+									<div class="spollers__item">
+										<button type="button" data-spoller class="spollers__title">Водители</button>
+										<div class="spollers__body">Модуль назначения водителей на транспортные средства. Удобен для сервисов доставки и такси, где водители регулярно сменяют друг-друга. Интегрирован с Драйвматикой.</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-service__item item-form-service">
+							<div class="item-form-service__checkbox checkbox">
+								<input id="c_10" class="checkbox__input" type="checkbox" value="Парковки" name="form[]">
+								<label for="c_10" class="checkbox__label"></label>
+							</div>
+							<div class="item-form-service__body">
+								<div data-spollers class="spollers">
+									<div class="spollers__item">
+										<button type="button" data-spoller class="spollers__title">Парковки</button>
+										<div class="spollers__body">Модуль автоматической оплаты платных парковок. Если автомобиль находится в зоне платной парковки - система самостоятельно открывает парковочную сессию и оплачивает парковку с баланса таксометра водителя. Для Москвы и Санкт-Петербурга. Временно не работает в связи с РЭБ</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-service__item item-form-service">
+							<div class="item-form-service__checkbox checkbox">
+								<input id="c_11" class="checkbox__input" type="checkbox" value="Статистика аквапарка" name="form[]">
+								<label for="c_11" class="checkbox__label"></label>
+							</div>
+							<div class="item-form-service__body">
+								<div data-spollers class="spollers">
+									<div class="spollers__item">
+										<button type="button" data-spoller class="spollers__title">Статистика аквапарка</button>
+										<div class="spollers__body">Модуль позволяет отслеживать количество бортов в простое, ремонте и на линии. Имеет возможность распределения ТС по колоннам (подразделениям) для наглядного отображения эффективности работы подразделений.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-service__item item-form-service">
+							<div class="item-form-service__checkbox checkbox">
+								<input id="c_12" class="checkbox__input" type="checkbox" value="Интеграции с внешними сервисами" name="form[]">
+								<label for="c_12" class="checkbox__label"></label>
+							</div>
+							<div class="item-form-service__body">
+								<div data-spollers class="spollers">
+									<div class="spollers__item">
+										<button type="button" data-spoller class="spollers__title">Интеграции с внешними сервисами</button>
+										<div class="spollers__body">Документированный API для интеграций со сторонними сервисами, такими как 1С, CRM и любыми другими внешними системами.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<button class="form-service__button button">Получить предложение</button>
+
+					</form>
+				</div>
+			</section>
+
+			<!--
+				<section class="test">
+					<div class="test__container">
+						<div class="test__body">
+
+						</div>
+					</div>
+				</section>
+			-->
+
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

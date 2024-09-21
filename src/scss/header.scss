@@ -1,0 +1,131 @@
+//====================================================================================================
+
+.header-overlay {
+  padding-top: toRem(75);
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+  background-color: #f8f8f8;
+  transition:
+    top 0.5s 0s,
+    background-color 0.5s,
+    opacity 1.5s 0s,
+    border-bottom 0.5s;
+  border-bottom: 1px solid transparent;
+
+  &._header-scroll {
+    // top: calc(var(--header-height) * -1);
+    // background-color: rgba(248, 248, 248, 0.8);
+    border-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+  }
+  //   &._header-show {
+  //     top: 0;
+  //   }
+
+  &__container {
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+    gap: toRem(20);
+
+    padding-top: toRem(20);
+    padding-bottom: toRem(20);
+    transition: padding-top 0.3s 0s;
+    ._header-scroll & {
+      padding-top: toRem(10);
+      padding-bottom: toRem(10);
+    }
+  }
+
+  &__logo {
+    max-width: toRem(162);
+
+    transition: all 0.3s ease 0s;
+    @media (any-hover: hover) {
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+
+    gap: toRem(13);
+  }
+
+  &__link {
+    transform: transform 0.3s ease 0s;
+
+    @media (any-hover: hover) {
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+//====================================================================================================
+
+//Burger
+/*
+.icon-menu {
+	display: none;
+	@media (max-width: $mobile) {
+		display: block;
+		position: relative;
+		width: toRem(30);
+		height: toRem(18);
+		z-index: 5;
+		@media (any-hover: none) {
+			cursor: default;
+		}
+		span,
+		&::before,
+		&::after {
+			content: "";
+			transition: all 0.3s ease 0s;
+			right: 0;
+			position: absolute;
+			width: 100%;
+			height: toRem(2);
+			background-color: #000;
+		}
+		&::before {
+			top: 0;
+		}
+		&::after {
+			bottom: 0;
+		}
+		span {
+			top: calc(50% - toRem(1));
+		}
+		.menu-open & {
+			span {
+				width: 0;
+			}
+			&::before,
+			&::after {
+			}
+			&::before {
+				top: calc(50% - toRem(1));
+				transform: rotate(-45deg);
+			}
+			&::after {
+				bottom: calc(50% - toRem(1));
+				transform: rotate(45deg);
+			}
+		}
+	}
+}
+*/

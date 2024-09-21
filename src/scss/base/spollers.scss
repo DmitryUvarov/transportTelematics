@@ -1,0 +1,57 @@
+// Базові стилі спойлерів
+// Сніппет (HTML): spoller
+
+// Блок зі спойлерами
+.spollers {
+  display: grid;
+  gap: 15px;
+}
+// Спойлер
+.spollers__item {
+  font-size: toRem(20);
+}
+// Заголовок спойлера
+.spollers__title {
+  width: 100%;
+  cursor: default;
+  text-align: left;
+
+  position: relative;
+  list-style: none;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 120%;
+  letter-spacing: -0.04em;
+  color: #1b1b1d;
+  &::marker {
+  }
+  ._spoller-init & {
+    cursor: pointer;
+    &::after {
+      content: "\e900";
+      @extend %ic;
+      position: absolute;
+      right: 10px;
+      top: calc(50% - 4px);
+      transition: transform 0.5s ease 0s;
+      font-size: toRem(8);
+      color: #bfc6d9;
+    }
+    &._spoller-active {
+      &::after {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+// Контент спойлера
+.spollers__body {
+  padding-top: toRem(20);
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 120%;
+  letter-spacing: -0.04em;
+  color: #848484;
+}
